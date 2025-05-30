@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Birthday Surprise</title>
+
+  <link href="./output.css" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<div class="relative w-full h-screen overflow-hidden">
+  <!-- Background Video -->
+  <video autoplay muted loop class="absolute top-0 left-0 w-full h-full object-fill">
+    <source src="./image/bgurl.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+  <div class="relative z-10 flex items-center justify-center h-full text-white text-center">
+    <h1 class="text-4xl md:text-6xl font-bold"><div id="message" class="hidden mt-10 text-3xl text-red-700 font-serif animate-bounce">
+    <i>🎂 Happy Birthday!  ALLAH Ap ko lambee zindagi day <span class="text-white font-bold">ap kabi oudas na hoon ap ki dolat may kbi kmi na ayea</span> ap kay cahray sa kbi <span class="text-blue-950">☺️muskurahat☺️</span> khatam na ho ameen 🎂</i>
+  </div>
+
+  <script>
+    function showMessage() {
+      document.getElementById('message').classList.remove('hidden');
+    }
+  </script>
+  <img src="./image/cake.png" alt=""></h1>
+  <a href="./image/RAJA.jpeg" class="flex"><b><i>RAJA</i></b></a>
+  
+
+
+  <body  class=" flex flex-col items-center justify-center min-h-screen text-center p-6">
+ <div class="flex gap-y-10"><h1 class="text-4xl font-bold text-black mb-6"><i><i></i><b><span class="text-pink-300">🎉HAPPY</span> <span class=" text-pink-300">BIRTHDAY</span> <span class=" text-pink-300  border-x-black">G🎁</span></b></i></h1>
+  <div class="space-x-4">
+    <button onclick="showMessage()" class="bg-red-950 hover:bg-red-950 text-black text-xl px-6 py-2 rounded-tl-3xl rounded-br-3xl transition">
+      Yes
+    </button>
+    <button onclick="alert('Aww, don’t be shy! Try again.')" class="bg-green-700 hover:bg-gray-600 text-black text-xl px-6 py-2 rounded-tl-3xl rounded-br-3xl transition">
+      No
+    </button>
+  </div>
+  
+</div>
+</div>
+</div>
+</body>
+</html>
